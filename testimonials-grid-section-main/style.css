@@ -20,22 +20,25 @@ html {
 }
 
 body {
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    padding: 10rem;
+    padding: 15rem;
     background-color: hsl(0, 0%, 81%);
     background-color: hsl(210, 46%, 95%);
     font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
 }
 
 section {
     display: grid;
     /* grid-template-columns: repeat(4, 1fr); */
     /* grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr)); */
-    grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
     margin-bottom: 2rem;
     gap: 2.4rem;
+    /* margin: 3.2rem; */
 }
 
 .testimonial {
@@ -144,12 +147,12 @@ img[alt~="Patrick"] {
 
 /* Below 1024px  */
 
-
-/* @media (max-width: 64em) {
+@media (max-width: 64em) {
     section {
         grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
+        background-color: red;
     }
-} */
+}
 
 
 /* Grid box positions */
